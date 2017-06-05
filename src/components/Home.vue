@@ -17,16 +17,22 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <modal></modal>
   </div>
 </template>
 
-<script>
+<script type="text/babel">
+import Modal from '../components/Modal/Modal.vue'
+
 export default {
   name: 'hello',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    Modal
   }
 }
 </script>
