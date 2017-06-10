@@ -1,0 +1,15 @@
+$button-border: none !default;
+$button-font-size: 1.3rem !default;
+$button-height: 36px !default;
+$button-padding: 0 2rem !default;
+$button-radius: 2px !default;
+
+.btn {
+  background-color: transparent;
+  border: $button-border;
+  border-radius: $button-radius;
+  display: inline-block;
+  height: $button-height;
+  line-height: $button-height;
+  padding: $button-padding;
+}
