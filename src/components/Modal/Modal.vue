@@ -1,12 +1,12 @@
-<template lang="html">
+<template>
   <div class="modal-container">
     <div class="modal" :class="[classes]">
       <div class="modal-content">
         <slot></slot>
       </div>
       <div class="modal-footer">
-        <button class="btn" @click="confirm">{{ okText }}</button>
-        <button class="btn" @click="cancel">{{ cancelText }}</button>
+        <md-button @click.native="confirm">{{ okText }}</md-button>
+        <button class="btn-flat" @click="cancel">{{ cancelText }}</button>
       </div>
     </div>
     <div class="modal-overlay" @click="close"></div>

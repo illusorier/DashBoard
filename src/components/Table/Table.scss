@@ -1,0 +1,15 @@
+.table {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  tbody .table-row {
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .table-cell {
+    height: 48px;
+    position: relative;
+  }
+}

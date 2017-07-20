@@ -1,0 +1,48 @@
+@import "../../styles/global.scss";
+
+$sidenav-bg-color: #fff !default;
+$swift-ease-out-duration: .4s !default;
+$swift-ease-out-timing-function: cubic-bezier(.25, .8, .25, 1) !default;;
+$swift-ease-out: all $swift-ease-out-duration $swift-ease-out-timing-function !default;
+
+.side-nav {
+  position: fixed;
+  width: 300px;
+  left: 0;
+  top: 0;
+  margin: 0;
+  height: 100%;
+  background-color: $sidenav-bg-color;
+  z-index: 1001;
+
+  @extend .z-depth-1;
+
+  transform: translate3D(-100%, 0, 0);
+  transition: $swift-ease-out;
+  transition-property: transform;
+  will-change: transform;
+
+  &.active {
+    transform: translate3D(0, 0, 0);
+  }
+}
+
+.sidenav-overlay {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: -100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 125%;
+  width: 100%;
+  background: #000;
+  opacity: 0.5;
+
+  will-change: opacity;
+
+  &.active {
+    display: block;
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../styles/global.scss";
+
+nav {
+
+  position: fixed;
+  z-index: 997;
+  color: #fff;
+  @extend .z-depth-1;
+  // TODO:主题色
+  background-color: #2196f3;
+  width: 100%;
+  min-height: 64px;
+  line-height: 64px;
+  padding: 0 8px;
+
+  .nav-wrapper {
+    position: relative;
+    height: 100%;
+  }
+}

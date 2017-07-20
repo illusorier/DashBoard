@@ -1,0 +1,17 @@
+@import "../../styles/global.scss";
+
+$card-radius: 2px;
+
+.card {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: $card-radius;
+  @extend .z-depth-1;
+
+  .card-content {
+    padding: 16px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,41 @@
+$collapsible-height: 3rem !default;
+
+.list {
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  list-style: none;
+
+  .list-item {
+
+    .list-item-container {
+      display: block;
+      cursor: pointer;
+      min-height: $collapsible-height;
+      line-height: $collapsible-height;
+      padding: 0 1rem;
+      z-index: 2;
+    }
+
+    &.list-item-expand {
+      overflow: hidden;
+
+      .list-expand {
+        display: block;
+        z-index: 1;
+        will-change: margin-bottom;
+        transition: all .5s ease-in-out;
+
+        &.active {
+          margin-bottom: 0!important;
+        }
+
+        &.transition-off {
+          transition: none!important;
+        }
+      }
+
+    }
+  }
+}
