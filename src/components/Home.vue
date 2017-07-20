@@ -31,13 +31,16 @@
     <div>
       <md-checkbox></md-checkbox>
     </div>
-    <modal ref="modal1"></modal>
+    <modal ref="modal1" @modalConfirm="cancel('modal1')" @modalCancel="cancel('modal1')"></modal>
   </div>
 </template>
 
 <script type="text/babel">
   export default {
     methods: {
+      cancel (ref) {
+        this.$refs[ref].close()
+      },
       openModal (ref) {
         this.$refs[ref].open()
       }

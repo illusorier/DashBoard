@@ -1,7 +1,3 @@
 <template>
-  <div>
-    <card>
-      Modal
-    </card>
-  </div>
+  <div></div>
 </template>

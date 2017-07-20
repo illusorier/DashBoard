@@ -6,7 +6,7 @@
       </div>
       <div class="modal-footer">
         <md-button @click.native="confirm">{{ okText }}</md-button>
-        <button class="btn-flat" @click="cancel">{{ cancelText }}</button>
+        <md-button @click.native="cancel">{{ cancelText }}</md-button>
       </div>
     </div>
     <div class="modal-overlay" @click="close"></div>
